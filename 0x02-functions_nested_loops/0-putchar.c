@@ -1,13 +1,19 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- **main - Entry point
- **Description: working with standard library function putchar
- **Return: 0
- **/
-
-int main(void)
+ *  _isupper - checks if the letters are uppercase
+ *  @c: input.
+ *
+ *  Return: 1 if c is uppercase
+ *  0 otherwise.
+ */
+int _isupper(int c)
 {
-	putchar('D');
-	return 0;
+	if ((c >= 'A') && (c <= 'Z'))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
